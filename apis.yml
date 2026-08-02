@@ -1,7 +1,28 @@
 aid: wayco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wayco.png
 name: Wayco
-description: Wayco is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Wayco (Wayco AI, Inc.) is a Y Combinator (W26) startup building an AI operator
+  for medical-legal cases. Its platform automates personal-injury and mass-tort
+  case workflows end to end: AI voice agents answer and triage intake calls, match
+  patients to medical providers by case type and location, coordinate telemedicine,
+  summarize and analyze medical records at scale, and manage lead follow-up from
+  first intake toward settlement. Founded by Iqbol Temirkhojaev and based in New
+  York City, the company serves law firms, medical-billing, and insurance-claims
+  teams. As of July 2026 Wayco is early stage and publishes a marketing site
+  (wayco.ai) only, with no public developer API, documentation, or machine-readable
+  specifications yet.
 url: https://raw.githubusercontent.com/api-evangelist/wayco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Legal Tech
+- Artificial Intelligence
+- Healthcare
+- Voice AI
+- Case Management
+- Personal Injury
+- Insurance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/wayco-domain-security.yml
+- type: Website
+  url: https://wayco.ai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
